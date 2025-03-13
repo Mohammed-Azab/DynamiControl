@@ -1,7 +1,12 @@
-Kp = 0.5;
-Ki = 0.5;
-kd = 0.5;
-dt = 0.01; % Time step
+function u = PIDController(e,p,i,d)
+    Kp = 0.5;
+    Ki = 0.5;
+    kd = 0.5;
+    dt = 0.01; % Time step
+
+    u = PID(e,p,i,d,kp,ki,kd);
+
+end 
 
 
 function u = PID(e,p,i,d,kp,ki,kd)
@@ -14,13 +19,19 @@ function u = PID(e,p,i,d,kp,ki,kd)
     if isempty(prev_error)
         prev_error = 0;
     end
-    P = 0;
+
+    P = kp*p;
+    I = ki*i;
+    D = kd*d;
+
     u = P + I + D;
 
     prev_error = e;
 
 
 end
+
+
 
 
 function u = P(e,p,i,d,kp,ki,kd)
