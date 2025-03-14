@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:d="http://www.mathworks.com/blockgraphics" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg" width="377" height="223.01" viewBox="0 0 377.55.55 223.01" d:options="Resize:FitToBlock;">
+	<g id="part" title="part_0" ie-ports="left:simulink,top:,right:simulink,bottom:">
+		<rect id="rect" fill="#78d6cf" x="0" y="0" width="373.55" height="164.53" rx="17.92" ry="17.92"/>
+		<ellipse id="ellipse" fill="#fff" cx="20.05" cy="19.93" rx="13.19" ry="13.19"/>
+		<ellipse id="ellipse_1" fill="#fff" cx="353.5" cy="19.93" rx="13.19" ry="13.19"/>
+		<path id="path" fill="#58595b" d=" M 117.04,125.61 H 256.51 V 164.75 H 117.04 L 117.04,125.61 Z"/>
+		<rect id="rect_2" fill="#f0f3ff" x="154.2" y="13.2" width="65.15" height="26.22" rx="13.11" ry="13.11"/>
+		<g id="group" fill="#c1c4c6">
+			<path id="path_3" d=" M 164.92,147.03 H 177.83 V 223 H 164.92 L 164.92,147.03 Z"/>
+			<path id="path_4" d=" M 133.6,147.03 H 146.51 V 223 H 133.6 L 133.6,147.03 Z"/>
+			<path id="path_5" d=" M 196.23,147.03 H 209.14 V 223 H 196.23 L 196.23,147.03 Z"/>
+			<path id="path_6" d=" M 227.55,147.03 H 240.46 V 223 H 227.55 L 227.55,147.03 Z"/>
+		</g>
+		<ellipse id="ellipse_7" fill="#fff" cx="20.05" cy="144.6" rx="13.19" ry="13.19"/>
+		<ellipse id="ellipse_8" fill="#fff" cx="353.5" cy="144.6" rx="13.19" ry="13.19"/>
+		<ellipse id="ellipse_9" fill="#f0f3ff" cx="87.12" cy="82.26" rx="67.08" ry="67.08"/>
+		<ellipse id="ellipse_10" fill="#3b3a45" cx="87.12" cy="82.26" rx="53.09" ry="53.09"/>
+		<ellipse id="ellipse_11" fill="#808083" cx="87.12" cy="82.26" rx="26.35" ry="26.35"/>
+		<ellipse id="ellipse_12" fill="#f0f3ff" cx="286.42" cy="82.26" rx="67.08" ry="67.08"/>
+		<ellipse id="ellipse_13" fill="#3b3a45" cx="286.42" cy="82.26" rx="53.09" ry="53.09"/>
+		<ellipse id="ellipse_14" fill="#808083" cx="286.42" cy="82.26" rx="26.35" ry="26.35"/>
+	</g>
+</svg>
