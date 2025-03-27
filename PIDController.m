@@ -1,16 +1,5 @@
-function u = PIDController(e,p,i,d)
-    Kp = 0.5;
-    Ki = 0.5;
-    kd = 0.5;
-    dt = 0.01; % Time step
-
-    u = PID(e,p,i,d,kp,ki,kd);
-
-end 
-
-
-function u = PID(e,p,i,d,kp,ki,kd)
-    
+% PID controller function
+function u = PID(e, p, i, d, kp, ki, kd)
     persistent integral_error prev_error;
     
     if isempty(integral_error)
@@ -20,34 +9,29 @@ function u = PID(e,p,i,d,kp,ki,kd)
         prev_error = 0;
     end
 
-    P = kp*p;
-    I = ki*i;
-    D = kd*d;
+    % Proportional, Integral, and Derivative terms
+    P = kp * p;
+    I = ki * i;
+    D = kd * d;
 
+    % Total control output
     u = P + I + D;
-
+    
+    % Update the previous error
     prev_error = e;
-
-
 end
 
-
-
-
-function u = P(e,p,i,d,kp,ki,kd)
-    u = PID(e,p,i,d,kp,0,0);
-
+% P controller function
+function u = P(e, p, i, d, kp, ki, kd)
+    u = PID(e, p, i, d, kp, 0, 0);
 end
 
-function u = PI(e,p,i,d,kp,ki,kd)
-     u = PID(e,p,i,d,kp,ki,0);
-
+% PI controller function
+function u = PI(e, p, i, d, kp, ki, kd)
+    u = PID(e, p, i, d, kp, ki, 0); 
 end
 
-function u = PD(e,p,i,d,kp,ki,kd)
-     u = PID(e,p,i,d,kp,0,kd);
-
+% PD controller function
+function u = PD(e, p, i, d, kp, ki, kd)
+    u = PID(e, p, i, d, kp, 0, kd);
 end
-
-
-
